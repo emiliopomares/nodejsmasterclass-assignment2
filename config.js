@@ -6,9 +6,11 @@ environments.staging = {
 	envName : 'staging',
 	hashingSecret : 'hTweWR45hQnYc23mFVgJFsjd245fAFhb',
 	mailgunToken : 'a token',
+	randomStringLength: 10,
 	logOperations : 
 		[ 'createUser',
-		  'validateUser',
+		  'createToken',
+		  'validateCredentials',
 		  'storeObject',
 		  'retrieveObject'
 		]
@@ -21,6 +23,7 @@ environments.production = {
         envName : 'staging',
         hashingSecret : '85hD77hPPhe743OM7834gfWj7iHy7iTf',
         mailgunToken : 'another token',
+	randomStringLength: 20,
 	logOperations : []
 };
 
