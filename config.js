@@ -8,11 +8,14 @@ environments.staging = {
 	mailgunToken : 'a token',
 	randomStringLength: 10,
 	logOperations : 
-		[ 'createUser',
+		[ 
+		  '*',
+		  'createUser',
 		  'createToken',
 		  'validateCredentials',
 		  'storeObject',
-		  'retrieveObject'
+		  'retrieveObject',
+		  'shoppingcart.*'
 		]
 		  
 };
