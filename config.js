@@ -5,6 +5,10 @@ environments.staging = {
 	httpsPort : 9090,
 	envName : 'staging',
 	hashingSecret : 'hTweWR45hQnYc23mFVgJFsjd245fAFhb',
+	stripeToken: {
+		'public':'pk_test_n8U7i5I1NrS3lepQXYfy7vYx',
+		'secret':'sk_test_SCnZEyj8Lk5CbY1f8MQVEZof'
+	},
 	mailgunToken : 'a token',
 	randomStringLength: 10,
 	logOperations : 
