@@ -1,0 +1,38 @@
+PENDING:
+
+USERS:
+	delete (DELETE) -> if token present
+
+TOKENS:
+	delete (DELETE) -> logout -> if token present. The shopping cart is destroyed
+
+SHOPPINGCART:
+	update (PUT) with item name, item amount -> if token present
+	get (GET) -> list current shoppingcart
+
+ORDERS:
+	create (POST) takes credit information -> if token present. The shopping cart is cleared
+	get (GET) -> list of orders, if token present
+
+
+
+
+DONE:
+
+
+
+
+MENU:
+	get (GET) -> list all menu
+
+
+
+
+USERS:
+	create (POST) with name, email, password and address
+	update (PUT) with optional name, optional email and optional address -> if token present
+	get (GET) -> if token present
+
+
+TOKENS:
+	create (POST) -> with email and password. A shopping cart is created
