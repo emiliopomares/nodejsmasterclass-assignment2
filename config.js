@@ -17,11 +17,13 @@ environments.staging = {
 	mailgunDomain : 'sandboxf1b2c14cdfb049a1ac72868f8f33646a.mailgun.org',
 	mailgunFromUser : 'pepperspizza',
 	randomStringLength: 10,
+	logToConsole : true,
+	logToFile : true,
 	logOperations : 
 		[ 
 		  '*',
-		  'createUser',
-		  'createToken',
+		  'user.create',
+		  'token.create',
 		  'validateCredentials',
 		  'storeObject',
 		  'retrieveObject',
@@ -38,6 +40,8 @@ environments.production = {
         hashingSecret : '85hD77hPPhe743OM7834gfWj7iHy7iTf',
         mailgunToken : 'another token',
 	randomStringLength: 20,
+	logToConsole : false,
+	logToFile : true,
 	logOperations : 
 		[
 
