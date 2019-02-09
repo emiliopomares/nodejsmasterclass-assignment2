@@ -1,20 +1,10 @@
 PENDING:
 
-SHOPPINGCART:
-	update (PUT) with item name, item amount -> if token present
-	get (GET) -> list current shoppingcart
+
 
 ORDERS:
 	create (POST) takes credit information -> if token present. The shopping cart is cleared
 	get (GET) -> list of orders, if token present
-
-
-
-
-@TODO:
-Make shoppingcart objects persistent 
-(shoppingcart persistence should be equal to tokens persistence)
-
 
 
 
@@ -34,3 +24,7 @@ USERS:
 TOKENS:
 	create (POST) -> with email and password. A shopping cart is created
 	delete (DELETE) -> logout -> if token present. The shopping cart is destroyed
+
+SHOPPINGCART:
+	update (PUT) with item name, item amount -> if token present
+	get (GET) -> list current shoppingcart
